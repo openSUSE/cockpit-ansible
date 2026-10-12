@@ -1,0 +1,106 @@
+# #-#-#-#-#  ansible.js.pot (PACKAGE VERSION)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# #-#-#-#-#  ansible.metainfo.pot (PACKAGE VERSION)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"#-#-#-#-#  ansible.html.pot (PACKAGE_VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE_VERSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Cockpit html2po\n"
+"#-#-#-#-#  ansible.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-13 14:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"#-#-#-#-#  ansible.manifest.pot (PACKAGE_VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE_VERSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Cockpit manifest2po\n"
+"#-#-#-#-#  ansible.metainfo.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-08 09:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: org.opensuse.cockpit_ansible.metainfo.xml:6
+#: org.opensuse.cockpit_ansible.metainfo.xml:8
+msgid "A cockpit module to handle running and editing ansible files"
+msgstr ""
+
+#: src/components/code-editor.tsx:88
+msgid "Add Variable"
+msgstr ""
+
+#: src/manifest.json:0
+msgid "Ansible"
+msgstr ""
+
+#: src/app.tsx:94
+msgid "Ansible Playbooks"
+msgstr ""
+
+#: src/index.html:20 org.opensuse.cockpit_ansible.metainfo.xml:5
+msgid "Cockpit Ansible"
+msgstr ""
+
+#: src/components/code-editor.tsx:48 src/components/code-editor.tsx:53
+msgid "Edit Variables"
+msgstr ""
+
+#: src/components/code-editor.tsx:225 src/components/code-editor.tsx:226
+msgid "Edit variables"
+msgstr ""
+
+#: src/app.tsx:75
+msgid "Loading Playbooks"
+msgstr ""
+
+#: src/app.tsx:82
+msgid "No playbooks found"
+msgstr ""
+
+#: src/app.tsx:85
+msgid "Please add them under $0 or install a package that provides them"
+msgstr ""
+
+#: src/components/code-editor.tsx:78
+msgid "Remove variable row"
+msgstr ""
+
+#: src/components/code-editor.tsx:218 src/components/code-editor.tsx:219
+msgid "Run playbook"
+msgstr ""
+
+#: src/components/code-editor.tsx:87
+msgid "Save Variables"
+msgstr ""
+
+#: src/components/code-editor.tsx:232 src/components/code-editor.tsx:233
+msgid "Save playbook"
+msgstr ""
