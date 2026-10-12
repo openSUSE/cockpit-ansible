@@ -1,0 +1,42 @@
+name: Pull Request
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    container:
+      image: registry.opensuse.org/opensuse/bci/nodejs:latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+      - name: install deps
+        run: npm ci && zypper install -y cockpit-devel make gettext-tools
+      - name: add cockpit-ansible as a safe safe directory
+        run: git config --global --add safe.directory /__w/cockpit-ansible/cockpit-ansible
+      - name: build
+        run: make && npm run build
+      - name: eslint
+        run: npm run eslint
+      - name: stylelint
+        run: npm run stylelint
+      - name: typecheck
+        run: npm run typecheck
+      - name: pot file changed but not commited
+        run: |
+          touch org.opensuse.cockpit_ansible.metainfo.xml src/index.tsx
+          make po/ansible.pot
+          git --no-pager diff po/ansible.pot
+          [ "$(git diff --numstat po/ansible.pot | cut -f1)" -gt 2 ] || \
+          [ "$(git diff --numstat po/ansible.pot | cut -f2)" -gt 2 ] \
+            && echo "po/ansible.pot has changed. Failing test" \
+            && exit 1
+          echo "No changes other than expected timestamps"
+          exit 0
